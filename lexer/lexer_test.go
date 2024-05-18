@@ -1,9 +1,8 @@
 package lexer
 
 import (
+	"github.com/artylemon/monkey_interpreter/token"
 	"testing"
-
-	"token/token"
 )
 
 func TestNextToken(t *testing.T) {
