@@ -10,3 +10,4 @@ My secondary goal is to get more familiar with the [GO](https://go.dev/) program
 
 ## Plans
 I plan to finish the book first, and finilise notes after, to have a broader understanding what part each module plays in the interpreter.
+![under_construction](https://github.com/artylemon/monkey_interpreter/assets/75631141/9e13c4fe-8640-4eed-be23-026b067df766)
