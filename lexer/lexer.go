@@ -126,8 +126,13 @@ func (l *Lexer) readString() string {
 		if l.ch == '"' || l.ch == 0 {
 			break
 		}
-		if l.ch == '\\' && l.peekChar() == '"' {
-			l.readChar() // consume additional token to skip the end-quote
+		if l.ch == '\\' {
+			switch l.peekChar() {
+			case '\\':
+				l.readChar()
+			case '"':
+				l.readChar() // consume additional token to skip the end-quote
+			}
 		}
 		str.WriteByte(l.ch)
 	}
