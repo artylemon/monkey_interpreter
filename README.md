@@ -1,4 +1,4 @@
-# Writing an interpretep for the monkey language.
+# Writing an interpreter for the monkey language.
 This is going to be an interpreter written in go for the monkey  programming language.
 It is based on Thorsten Ball's book [Writing An Interpreter in GO](https://interpreterbook.com/).
 
