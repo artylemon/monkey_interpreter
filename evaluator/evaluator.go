@@ -124,7 +124,6 @@ func evalHashLiteral(node *ast.HashLiteral, env *object.Environment) object.Obje
 
 		hashed := hashKey.HashKey()
 		pairs[hashed] = object.HashPair{Key: key, Value: value}
-		fmt.Printf("End of iteration pairs: %s", pairs[hashed])
 	}
 
 	return &object.Hash{Pairs: pairs}

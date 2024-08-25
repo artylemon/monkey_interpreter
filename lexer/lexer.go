@@ -1,7 +1,6 @@
 package lexer
 
 import (
-	"fmt"
 	"github.com/artylemon/monkey_interpreter/token"
 	"strings"
 )
@@ -143,7 +142,6 @@ func (l *Lexer) readString() string {
 		str.WriteByte(l.ch)
 	}
 
-	fmt.Println(str.String())
 	return str.String()
 }
 
