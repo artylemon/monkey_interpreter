@@ -3,7 +3,7 @@ This is an interpreter written in [Go](https://go.dev/) for a toy programming la
 
 ## Why am I doing this
 I started this project to deepen my understanding of scripting languages, gain more practical experience with Go, and test my new [neovim environment setup](https://github.com/artylemon/kickstart.nvim).
-Now I want to share my summary of the stages that allow us to program computers using human-like language.
+Now, I want to share my summary of how this interpreter works to show how it is possible to communicate with computers using a human-like language.
 
 ## Overview of the monkey language
 Here is the demonstration of the monkey's features.
