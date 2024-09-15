@@ -3,6 +3,7 @@ package evaluator
 import (
 	"fmt"
 	"github.com/artylemon/monkey_interpreter/object"
+	"os"
 )
 
 var builtins = map[string]*object.Builtin{
@@ -100,6 +101,18 @@ var builtins = map[string]*object.Builtin{
 			for _, arg := range args {
 				fmt.Println(arg.Inspect())
 			}
+
+			return NULL
+		},
+	},
+
+	"exit": {
+		Fn: func(args ...object.Object) object.Object {
+			if len(args) != 0 {
+				return newError("wrong number of arguments. got=%d, want=0",
+					len(args))
+			}
+			os.Exit(1)
 
 			return NULL
 		},
